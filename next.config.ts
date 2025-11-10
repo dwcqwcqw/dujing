@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const repoName = "dujing";
-const isProd = process.env.NODE_ENV === "production";
+const isGitHubPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -10,8 +10,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? `/${repoName}` : undefined,
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
+  basePath: isGitHubPages ? `/${repoName}` : undefined,
+  assetPrefix: isGitHubPages ? `/${repoName}/` : undefined,
 };
 
 export default nextConfig;
