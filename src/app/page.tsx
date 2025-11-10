@@ -422,78 +422,7 @@ function ProductSection() {
 }
 
 function ImmersionSection() {
-  return (
-    <section
-      id="immersion"
-      className="relative px-6 py-24 md:px-8 lg:px-12"
-      aria-labelledby="immersion-title"
-    >
-      <div className="mx-auto max-w-6xl">
-        <div className="relative overflow-hidden rounded-[40px] border border-blue-200/40 bg-gradient-to-br from-blue-50/80 to-sky-50/60 shadow-2xl shadow-blue-200/20">
-          <video
-            className="absolute inset-0 h-full w-full object-cover opacity-30"
-            autoPlay
-            loop
-            muted
-            playsInline
-            controls={false}
-            src={videoSource}
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-blue-50/70 to-sky-50/60" />
-          <div className="relative z-10 flex flex-col gap-10 px-10 py-16 md:flex-row md:items-center md:gap-16 md:px-16 md:py-20">
-            <div className="max-w-xl">
-              <p className="text-sm uppercase tracking-[0.3em] text-blue-500">
-                ENTER DUJING
-              </p>
-              <h2
-                id="immersion-title"
-                className="mt-4 text-3xl font-semibold text-slate-800 md:text-4xl"
-              >
-                每一页文字，都是一个可进入的世界
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-slate-600">
-                灵感来源 Apple Vision Pro、Replika 与 Notion AI。读境 AI
-                将阅读场景与动态粒子交织，营造流光科技的沉浸感，配合轻微粒子轨迹与书页展开动画，让记忆在光影中定格。
-              </p>
-              <div className="mt-8 space-y-3 text-sm text-slate-600">
-                <p>· 背景全屏视频记录 AI 生成的阅读场景</p>
-                <p>· 粒子与文字同步流动，形成沉浸式光轨</p>
-                <p>· 中央一句宣言引导进入读境的情绪</p>
-              </div>
-            </div>
-
-            <div className="flex flex-1 flex-col gap-4">
-              <motion.div
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="rounded-2xl border border-blue-200/40 bg-white/80 p-6 backdrop-blur shadow-sm"
-              >
-                <p className="text-sm text-blue-600 font-medium">场景亮点</p>
-                <p className="mt-3 text-sm text-slate-700">
-                  「进入读境」落地页采用流光粒子、动态模糊渐变与玻璃拟态信息层，打造未来阅读空间感。
-                </p>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-                className="rounded-2xl border border-blue-200/40 bg-white/70 p-6 backdrop-blur shadow-sm"
-              >
-                <p className="text-sm text-sky-600 font-medium">互动建议</p>
-                <p className="mt-3 text-sm text-slate-700">
-                  鼠标移动时背景粒子随之流动，Logo
-                  以书页翻动动画渐显，营造&quot;阅读空间唤醒&quot;的仪式感。
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return null;
 }
 
 function TechnologySection() {
